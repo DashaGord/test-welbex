@@ -1,0 +1,31 @@
+table.title{
+    text-decoration: none;
+    border-collapse:collapse;
+    width:100%;
+    text-align:center;
+}
+table.title th{
+    font-weight:500;
+    font-size:23px;
+    color:#ffffff;
+    background-color:#9c8a9e;
+}
+table.title td{
+    font-size:18px;
+    color:#000000;
+}
+table.title td,
+table.title th{
+    white-space:pre-wrap;
+    padding:10px 6px;
+    line-height:13px;
+    vertical-align: middle;
+    border: 2px solid #464e54;
+}
+table.title tr:hover{
+    background-color:#f9fafb;
+}
+table.title tr:hover td{
+    color:#7e80a6;
+    cursor:pointer;
+}

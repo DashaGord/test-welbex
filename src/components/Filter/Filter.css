@@ -1,0 +1,23 @@
+form{
+    padding: 20px;
+    text-align: center;
+}
+form select{
+    font-size: 23px;
+    border: 0;
+}
+form input{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #d7d7d7;
+    margin: 0 8px 20px 8px;
+}
+form button{
+    background: #8b658d;
+    color: white;
+    padding: 16px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 20px;
+}

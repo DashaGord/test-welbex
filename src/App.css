@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  width: 1400px;
+  height: 980px;
+}
+.header{
+  padding: 30px;
+  text-align: center;
+  font-size: 50px;
+}
+.header span{
+  color: #8b658d;
+}

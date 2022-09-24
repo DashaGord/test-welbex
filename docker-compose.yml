@@ -1,0 +1,42 @@
+version: "3.9"
+services:
+  node-server:
+    restart: always
+    build: ./node-server/.
+    ports:
+      - 3001:3001
+    volumes:
+      - ./:/code
+    depends_on:
+      - db
+#
+#  react-app:
+#    restart: always
+#    build: ./react-app/.
+#    ports:
+#      - 80:3001
+#    volumes:
+#      - ./:/code
+#    depends_on:
+#      - node-server
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: my_db
+    ports:
+      - 5432:5432
+    volumes:
+        # copy the sql script to create tables
+      - ./db/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    tty: true
+
+#networks:
+#  default:
+#    ipam:
+#      driver: default
+#      config:
+#        - subnet: 172.22.0.1/8

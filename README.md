@@ -1,3 +1,15 @@
+## Поднимать через Docker.
+
+### `docker-compose up -d`
+
+Это сразу запустит:
+
+* `db` база данных на PostgreSQL\
+* `node-server` сервер для работы с бд \
+* `react-app` реализующая логику\
+
+Open [http://localhost:3000](http://localhost:3000)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

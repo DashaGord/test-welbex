@@ -11,3 +11,12 @@
 .header span{
   color: #8b658d;
 }
+form button{
+  background: #8b658d;
+  color: white;
+  padding: 16px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 20px;
+  cursor:pointer;
+}

@@ -1,10 +1,11 @@
 import './Table.css';
 
 const Table = ({data}) => {
-    const elements =  data.map(items =>{
-        return(
+
+    const elements = data.map(items => {
+        return (
             <tr>
-                <td>{items.date}</td>
+                <td>{items.year}</td>
                 <td>{items.name}</td>
                 <td>{items.lot}</td>
                 <td>{items.distance}</td>
@@ -12,7 +13,7 @@ const Table = ({data}) => {
         )
     })
 
-    return(
+    return (
         <table className="title">
             <thead>
             <tr>
